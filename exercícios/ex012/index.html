@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <p>Vídeo inserido de maneira simples</p>
+    <video src="midia/meu-video.mp4" width="600" controls loop></video>
+
+    <hr>
+
+    <p>Vídeo inserido de maneira completa</p>
+    <video controls poster="imagens/limoes-capa.png" width="600">
+        <source src="midia/meu-video.mp4" type="video/mp4"> <!-- HTML tenta carregar em ordem os arquivos -->
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mkv" type="video/mk4">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <hr>
+
+    <p>Vídeo inserido do YouTube</p> <!-- Só clicar em compartilhar no Youtube -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kG8tUH0Sf4Q?si=ej42xusALArXbvZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>Vídeo inserido do Vímeo</p> <!-- Só clicar em compartilhar no Vímeo -->
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/267490452?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:560px;height:315px;" title="Character Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
