@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        h1{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de Tabelas</h1>
+
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Gurpos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores Ultimato</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Homem-Aranha 2</td>
+            </tr>
+
+            <tr>
+                <td>Vanessa Oliveira</td>
+                <td>Castelo Animado</td>
+                <td>A Pequena Sereia</td>
+                <td>Senhor dos Aneis</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Exterminador do Futuro</td>
+                <td>Alvin e os esquilos</td>
+            </tr>
+
+            <tr>
+                <td>Gabriel Vasconcelos</td>
+                <td>Star Wars 3</td>
+                <td>Batman 2</td>
+                <td>Como Treinar o seu Dragão</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
