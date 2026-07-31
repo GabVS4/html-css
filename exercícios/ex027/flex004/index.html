@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body > div {
+            margin: 10px;
+        }
+
+        div.container1{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+
+        div.container2{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+
+
+        div.container3{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+
+        div.container4{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        div.container5{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+
+        div.container6{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+
+        div.container7{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+
+            height: 200px;
+
+            align-items: stretch;            
+        }
+
+        div.container8{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: 200px;
+
+            align-items: start;
+        }
+
+
+        div.container9{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: 200px;
+
+            align-items: end;
+        }
+
+        div.container10{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            height: 200px;
+
+            align-items: center;
+        }
+
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container8">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container9">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <div class="container10">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
