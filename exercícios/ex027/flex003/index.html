@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body > div > div{
+            padding: 10px;
+        }
+
+        div.container1{
+            display: flex;
+            background-color: lightsalmon;
+
+            flex-flow: row wrap; /*Short hand*/
+            /*
+            flex-direction: row;
+            flex-wrap: wrap;
+            */
+        }
+
+        div.container2{
+            display: flex;
+            background-color: lightsalmon;
+           
+            flex-flow: row nowrap;
+        }
+
+        div.container3{
+            display: flex;
+            background-color: lightsalmon;
+           
+            flex-flow: row wrap-reverse;
+        }
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+     <div class="container1">
+        <div class="item">Exemplo A</div>
+        <div class="item">Exemplo B</div>
+        <div class="item">Exemplo C</div>
+        <div class="item">Exemplo D</div>
+        <div class="item">Exemplo E</div>
+        <div class="item">Exemplo F</div>
+        <div class="item">Exemplo G</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item">Exemplo A</div>
+        <div class="item">Exemplo B</div>
+        <div class="item">Exemplo C</div>
+        <div class="item">Exemplo D</div>
+        <div class="item">Exemplo E</div>
+        <div class="item">Exemplo F</div>
+        <div class="item">Exemplo G</div>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item">Exemplo A</div>
+        <div class="item">Exemplo B</div>
+        <div class="item">Exemplo C</div>
+        <div class="item">Exemplo D</div>
+        <div class="item">Exemplo E</div>
+        <div class="item">Exemplo F</div>
+        <div class="item">Exemplo G</div>
+    </div>
+    <br>
+</body>
+</html>
