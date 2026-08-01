@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body > div {
+            margin: 10px;
+            height: 400px;
+        }
+
+        div.container1{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: stretch;
+        }
+
+        div.container2{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: flex-start;
+        }
+
+        div.container3{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: flex-end;
+        }
+
+        div.container4{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: center;
+        }
+
+        div.container5{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: space-around;
+        }
+
+        div.container6{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: space-evenly;
+        }
+
+        div.container7{
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+            
+            align-content: space-between;
+        }
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+
+    <div class="container7">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+</body>
+</html>
