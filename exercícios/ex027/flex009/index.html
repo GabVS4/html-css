@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            display: flex;
+            background-color: lightsalmon;
+            margin: 10px 0px;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        div.i1{
+            flex-basis: auto;
+        }
+
+        div.i2{
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">A</div>
+        <div class="item i1">Conteúdo maior B</div>
+        <div class="item i1">C</div>
+        <div class="item i1">Conteúdo ainda maior D</div>
+        <div class="item i1">E</div>
+        <div class="item i1">Maior conteúdo de todos F</div>
+        <div class="item i1">G</div>
+    </div>
+
+    <div class="container">
+        <div class="item i2">A</div>
+        <div class="item i2">Conteúdo maior B</div>
+        <div class="item i2">C</div>
+        <div class="item i2">Conteúdo ainda maior D</div>
+        <div class="item i2">E</div>
+        <div class="item i2">Maior conteúdo de todos F</div>
+        <div class="item i2">G</div>
+    </div>
+
+    <div class="container" style="flex-wrap: wrap;">
+        <div class="item i2">A</div>
+        <div class="item i2">Conteúdo maior B</div>
+        <div class="item i2">C</div>
+        <div class="item i2">Conteúdo ainda maior D</div>
+        <div class="item i2">E</div>
+        <div class="item i2">Maior conteúdo de todos F</div>
+        <div class="item i2">G</div>
+    </div>
+
+</body>
+</html>
