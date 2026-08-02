@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+
+        div.container{
+            display: flex;
+            background-color: lightsalmon;
+            margin: 10px 0px;
+            flex-flow: row nowrap;
+
+            /*
+            Padrão:
+            flex-grow: 0;
+            flex-shrink: 1;*/
+        }
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 20px 0px;
+
+            flex-basis: 250px;
+        }
+
+        div.cxA{
+            /*
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px;
+            */
+
+            flex: 1 0 200px;
+        }
+
+        div.cxB{
+            /*
+            flex-grow: 8;
+            flex-shrink: 1;
+            flex-basis: 150px;
+            */
+        
+            flex: 8 1 150px;
+        }
+
+        div.cxC{
+            /*           
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;           
+            */
+
+            flex: 0 1 auto;
+        }
+
+        div.initial{
+            /*
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;           
+            */
+
+            flex: initial;
+        }
+
+        div.none{
+            /*
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;           
+            */
+
+            flex: none;
+        }
+
+        div.auto{
+            /*
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;           
+            */
+            flex: auto;
+        }
+
+        div.fixo{
+            /*
+            flex-grow: 3;
+            flex-shrink: 1;
+            flex-basis: auto;           
+            */
+            padding: 20px;
+
+            flex: 3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Aplicando o short-hand flex</h1>
+
+    <div class="container">
+        <div class="item cxA">A</div>
+        <div class="item cxB">B</div>
+        <div class="item cxC">C</div>
+    </div>
+
+
+    <h1>Aplicando o short-hand: initial, none, auto, valor fixo</h1>
+    <div class="container">
+        <div class="item initial">flex initial</div>
+        <div class="item none">flex none</div>
+        <div class="item auto">flex auto</div>
+        <div class="item fixo">flex fixo</div>
+    </div>
+
+
+</body>
+</html>
