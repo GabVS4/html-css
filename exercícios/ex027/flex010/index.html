@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+
+        div.container{
+            display: flex;
+            background-color: lightsalmon;
+            margin: 10px 0px;
+            flex-flow: row nowrap;
+
+            /*
+            Padrão:
+            flex-grow: 0;
+            flex-shrink: 1;*/
+        }
+
+        div.container2{
+            display: flex;
+            background-color: lightsalmon;
+            margin: 10px 0px;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            text-align: center;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 20px 0px;
+
+            flex-basis: 250px;
+        }
+
+        div.growNoShrink{
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        div.growShrink{
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div.noGrowShrink{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div.noGrowNoShrink{
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Exemplos para Shrink e Basis de 0 e 1</h1>
+    <h2>Cresce e não Ecnolhe</h2>
+    <div class="container">
+        <div class="item growNoShrink">A</div>
+        <div class="item growNoShrink">B</div>
+        <div class="item growNoShrink">C</div>
+    </div>
+
+    <h2>Cresce e Encolhe</h2>
+    <div class="container">
+        <div class="item growShrink">A</div>
+        <div class="item growShrink">B</div>
+        <div class="item growShrink">C</div>
+    </div>
+
+    <h2>Não Cresce e Não Encolhe</h2>
+    <div class="container">
+        <div class="item noGrowNoShrink">A</div>
+        <div class="item noGrowNoShrink">B</div>
+        <div class="item noGrowNoShrink">C</div>
+    </div>
+
+    <h2>Não Cresce e Encolhe</h2>
+    <div class="container">
+        <div class="item noGrowShrink">A</div>
+        <div class="item noGrowShrink">B</div>
+        <div class="item noGrowShrink">C</div>
+    </div>
+
+    <h2>Cresce e Encolhe e preenche</h2>
+    <div class="container2">
+        <div class="item growShrink">A</div>
+        <div class="item growShrink">B</div>
+        <div class="item growShrink">C</div>
+    </div>
+</body>
+</html>
