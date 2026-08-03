@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a{
+    width: 90vw;
+}
+
+header > nav {
+    display: none;
+}
+
+span#burger {
+    display: block;
+    background-color: black;
+    width: 90vw;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span#burger:hover{
+    background-color: white;
+    color: black;
+}
+
+main {
+    width: 96vw;
+}
