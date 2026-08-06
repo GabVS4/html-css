@@ -15,115 +15,93 @@
             text-align: center;
         }
 
-        div.container1{
+        div.container{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, 80px) / repeat(3, 120px);
             gap: 5px;
 
-            align-items: stretch;
-            justify-content: stretch;
+            grid-auto-flow: row;
 
-            align-content: stretch;
-            justify-content: stretch;
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
             border: 3px solid blue;
         }
 
         div.container2{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, 80px) / repeat(3, 120px);
             gap: 5px;
 
-            align-items: start;
-            justify-content: start;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
 
-            align-content: start;
-            justify-content: start;
+            grid-auto-flow: row;
+
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
             border: 3px solid blue;
         }
 
         div.container3{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, 80px) / repeat(3, 120px);
             gap: 5px;
 
-            align-items: end;
-            justify-content: end;
+            grid-auto-flow: column;
 
-            align-content: end;
-            justify-content: end;
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
             border: 3px solid blue;
         }
 
         div.container4{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, 80px) / repeat(3, 120px);
             gap: 5px;
 
-            align-items: center;
-            justify-content: center;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
 
-            align-content: center;
-            justify-content: center;
+            grid-auto-flow: column;
+
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
             border: 3px solid blue;
         }
 
         div.container5{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(2, 2fr) 3fr / 1fr 3fr 2fr;
             gap: 5px;
 
-            align-items: center;
-            justify-content: center;
+            grid-auto-rows: 2fr;
+            grid-auto-columns: 1fr;
 
-            align-content: space-between;
-            justify-content: space-between;
+            grid-auto-flow: row;
+
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
             border: 3px solid blue;
         }
 
         div.container6{
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template: repeat(3, 80px) / 100px 40% repeat(2, 1fr);
             gap: 5px;
 
-            align-items: center;
-            justify-content: center;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 1fr;
 
-            align-content: space-evenly;
-            justify-content: space-evenly;
+            grid-auto-flow: row;
+
+            place-items: auto auto;
+            place-content: auto auto;
             
-            height: 250px;
-            border: 3px solid blue;
-        }
-
-        div.container7{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 5px;
-
-            align-items: center;
-            justify-content: center;
-
-            align-content: space-around;
-            justify-content: space-around;
-            
-            height: 250px;
             border: 3px solid blue;
         }
 
@@ -134,8 +112,8 @@
     </style>
 </head>
 <body>
-    <h2>Configuração padrão (Tudo Stretch)</h2>
-    <div class="container1">
+    <h2>Sem o grid-auto-rows</h2>
+    <div class="container">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
@@ -143,9 +121,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 
-    <h2>Todas as configurações em Start</h2>
+    <h2>Com o grid-auto-rows</h2>
     <div class="container2">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -154,9 +135,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 
-    <h2>Todas as configurações em End</h2>
+    <h2>Sem o grid-auto-columns</h2>
     <div class="container3">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -165,9 +149,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 
-    <h2>Todas as configurações em Center</h2>
+    <h2>Com o grid-auto-columns</h2>
     <div class="container4">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -176,9 +163,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 
-    <h2>Conteúdo em Space-around</h2>
+    <h2>Dividindo com frações</h2>
     <div class="container5">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -187,9 +177,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 
-    <h2>Conteúdo em Space-evenly</h2>
+    <h2>Misturando medidas</h2>
     <div class="container6">
         <div class="item">A</div>
         <div class="item">B</div>
@@ -198,17 +191,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-    </div>
-
-    <h2>Conteúdo em Space-between</h2>
-    <div class="container7">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
